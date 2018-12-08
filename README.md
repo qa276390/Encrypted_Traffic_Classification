@@ -4,14 +4,13 @@
 We use [joy 2.0](https://github.com/cisco/joy) tool to convert pcap file to json.
 
 
-This final project is dependent on Python 
+This project is dependent on Python 
 
 - keras == 2.2.0
 - numpy == 1.14.0
 - pandas == 0.22.0
 - matplotlib == 2.1.2
 - scikit-learn == 0.19.1
-
 
 ## Usage
 
