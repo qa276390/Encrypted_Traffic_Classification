@@ -17,7 +17,7 @@ This final project is dependent on Python
 
 ### Folder and Dataset
 
-To start this project you can download dataset from https://www.unb.ca/cic/datasets/vpn.html
+To start this project you can download dataset from [VPN-nonVPN dataset (ISCXVPN2016)](https://www.unb.ca/cic/datasets/vpn.html)
 and unzip those file to `./data/PCAP`.
  
     .
