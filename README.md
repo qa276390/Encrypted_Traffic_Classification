@@ -15,7 +15,8 @@ This final project is dependent on Python
 
 ### Folder and Dataset
 
-To start this project we have to download dataset from Kaggle and put those file to `./input/audio_train` and `./input/audio_test` .
+To start this project you can download dataset from https://www.unb.ca/cic/datasets/vpn.html
+and unzip those file to `./data/PCAP`.
  
     .
     ├── ...
@@ -39,20 +40,19 @@ To start this project we have to download dataset from Kaggle and put those file
 
 ### Data Preprocessing 
 
-To use the data generator to append the dataset, do:
+You can convert pcap file to json, do:
 
-if only for predict:
 
 ```shell
-python3 ./final/src/data_gen.py --test_only 1
+python3 ??
 ```
 
-for train and predict:
+Or using the json file we have already converted:
 
 ```shell
-# To use the data generator you should decide 
-# 2 paraneters : strech, num
-python3 ./final/src/data_gen.py --strech 1.1 --num 5 
+# To use the table generator you should decide 
+# 3 paraneters : input folder, output table, malicious or not
+sh multi_gen.sh ../data/JSON Table.csv 0
 ```
 
 ### Training
