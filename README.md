@@ -1,8 +1,8 @@
 # Encrypted_Traffic_Classification
 
 ## Dependency
-We use joy 2.0 tool to convert pcap file to json.
-- https://github.com/cisco/joy
+We use [joy 2.0](https://github.com/cisco/joy) tool to convert pcap file to json.
+
 
 This final project is dependent on Python 
 
