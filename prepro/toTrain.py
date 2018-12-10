@@ -15,6 +15,9 @@ if __name__=="__main__":
     print('df shape: ',df.shape)
     print('df shape: ',df.columns)
     
+    #create column vpn
+    df['vpn'] = df.file_name.str.contains('vpn').astype(int)
+    
     df = df[(df.type!='browsing')&(df.file_name!='skype_audio1a_test')]
     # Broadcast and Multicast
     df = df[~(df.da.str.contains('224.0.'))]
