@@ -25,10 +25,9 @@ and unzip those file to `./data/PCAP`.
     ├── ...
     ├── data                    
     │   ├── PCAP                  # where pcap file should be
-    │   ├── JSON                  # the output json file from joy
-    │   └── ...
-    ├── visualize 
-    │   ├──                       # visualize
+    │   ├── JSON                  # the output json file from joy(after sleuth)
+    |   ├── tmpJSON               # tmp json file from joy
+    │   └── pcap_to_json.sh       # turn pcap to json file
     ├── prepro
     │   ├── multi_gen.sh          # script to turn json file into table
     │   ├──                       # other prepro
@@ -44,10 +43,10 @@ and unzip those file to `./data/PCAP`.
 ### Data Preprocessing 
 
 You can convert pcap file to json, do:
-
+Before execute the code below, please make sure there are ~/joy/bin/joy and ~/joy/sleuth files in your computer. The fourth input please fill in a integer between 0~200, which means the packet num in the flow. The example below extract the first 50 packets in a flow and transform the informations to json file.
 
 ```shell
-python3 ??
+sh pcap_to_json.sh PCAP tmpJSON JSON 50
 ```
 
 Or using the json file we have already converted:
