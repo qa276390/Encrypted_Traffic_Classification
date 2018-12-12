@@ -15,6 +15,9 @@ if __name__=="__main__":
     print('df shape: ',df.shape)
     print('df shape: ',df.columns)
     
+    #create column vpn
+    df['vpn'] = df.file_name.str.contains('vpn').astype(int)
+    
     df = df[(df.type!='browsing')&(df.file_name!='skype_audio1a_test')]
     # Broadcast and Multicast
     df = df[~(df.da.str.contains('224.0.'))]
@@ -39,7 +42,7 @@ if __name__=="__main__":
     #y_train = type_
 
     print('y_train:', np.shape(y_train))
-    np.save('y_train', y_train)
+    np.save('../data/y_train', y_train)
     
     df = df.drop(df.columns[0], axis=1)
     print('df shape: ',df.shape)
@@ -53,7 +56,7 @@ if __name__=="__main__":
     #table = table.drop(['label'], axis = 1)
     X_train = table.values
     print('train:', table.shape)
-    np.save('X_train', X_train)
+    np.save('../data/X_train', X_train)
     #table.to_csv('train.csv', index = False)
     
     table[0:1].to_csv('ColSample.csv', index = False)
