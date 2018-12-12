@@ -11,6 +11,7 @@ This project is dependent on Python
 - pandas == 0.22.0
 - matplotlib == 2.1.2
 - scikit-learn == 0.19.1
+- xgboost == 0.80
 
 ## Usage
 
