@@ -55,7 +55,7 @@ Or using the json file we have already converted:
 ```shell
 # To use the table generator you should decide 
 # 3 paraneters : input folder, output table, malicious or not
-sh multi_gen.sh ../data/JSON Table.csv 0
+cd prerpo &&　sh multi_gen.sh ../data/JSON Table.csv 0
 ```
 
 ### Training
@@ -64,8 +64,7 @@ To train a model, do:
 
 ```shell
 # To use the train you should give the model you want to use:
-cd ./final/src && bash train.sh 1d_conv
-cd ./final/src && bash train.sh 2d_mfcc
+cd ./main && python3 DNN.py --source_data_folder ../data --output_folder ./output
 ```
 
 
