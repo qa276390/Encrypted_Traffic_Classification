@@ -43,7 +43,7 @@ and unzip those file to `./data/PCAP`.
 ### Data Preprocessing 
 
 You can convert pcap file to json, do:
-Before execute the code below, please make sure there are ~/joy/bin/joy and ~/joy/sleuth files in your computer. The fourth input please fill in a integer between 0~200, which means the packet num in the flow. The example below extract the first 50 packets in a flow and transform the informations to json file.
+Before execute the code below, please make sure there are ~/joy/bin/joy and ~/joy/sleuth files in your computer. The fourth input please fill in a integer between 0 to 200, which means the packet num in the flow. The example below extract the first 50 packets in a flow and transform the informations to json file.
 
 ```shell
 sh pcap_to_json.sh PCAP tmpJSON JSON 50
