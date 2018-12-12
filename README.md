@@ -12,6 +12,7 @@ This project is dependent on Python
 - matplotlib == 2.1.2
 - scikit-learn == 0.19.1
 - xgboost == 0.80
+- argparse == 3.2
 
 ## Usage
 
