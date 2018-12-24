@@ -59,24 +59,19 @@ Or skipping above steps, using the json file we have already converted:
 cd prerpo &&　sh multi_gen.sh ../data/JSON Table.csv 0
 ```
 
-### Training
+### Training & Evaluation
 
 To train a model, do:
 
 ```shell
-# To use the train you should give the model you want to use:
-cd ./main && python3 DNN.py --source_data_folder ../data --output_folder ./output
+# To train the model, you should specify the mode(DNN/XGB):
+cd ./main && sh TRAIN.sh DNN
 ```
-
-
-### Predict
 
 ```shell
-cd ./final/src && bash predict.sh
+# Or specify other parameters:
+cd ./main && python3 train.py --mode DNN --source_data_folder ../data --output_folder ./output --batch_size 1024 --patience 1000 
 ```
-whitch will output `1d_2d_ensembled_submission.csv` in the same directory
-
-
 
 
 
