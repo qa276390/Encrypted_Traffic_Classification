@@ -30,14 +30,11 @@ and unzip those file to `./data/PCAP`.
     │   └── pcap_to_json.sh       # turn pcap to json file
     ├── prepro
     │   ├── multi_gen.sh          # script to turn json file into table
-    │   ├──                       # other prepro
     |   └── ...                 
     ├── main
-    │   ├── train.csv             # training list
-    │   ├── sample_submission.csv # testing list
-    │   ├── audio_train           # Folder contains train data (wav file)
-    │   ├── audio_test            # Folder contains test data (wav file)
-    |   └── mfcc                  # output folder for mfcc_test.npy
+    │   ├── train.py              # main function to train
+    │   ├── TRAIN.sh              # script to train
+    |   └── ...                   
     └── ...
 
 ### Data Preprocessing 
@@ -68,11 +65,11 @@ To train a model, do:
 cd ./main && sh TRAIN.sh DNN
 ```
 
+Or specify other parameters:
+
 ```shell
-# Or specify other parameters:
+# There are up to 5 parameters: mode, data path, output folder, batch size, patience :
 cd ./main && python3 train.py --mode DNN --source_data_folder ../data --output_folder ./output --batch_size 1024 --patience 1000 
 ```
 
 
-
-## Reference
