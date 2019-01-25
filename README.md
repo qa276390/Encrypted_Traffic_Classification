@@ -53,7 +53,7 @@ Or skipping above steps, using the json file we have already converted:
 ```shell
 # To use the table generator you should decide 
 # 3 parameters : input folder, output table, malicious or not
-cd prerpo &&　sh multi_gen.sh ../data/JSON Table.csv 0
+cd prerpo &&　sh multi_gen.sh ../data/JSON Table.csv 0 && python3 toTrain.py Table.csv
 ```
 
 ### Training & Evaluation
