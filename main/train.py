@@ -494,7 +494,7 @@ def XGB(opts):
     y_pred = xgbc.predict(X_test)
 
     #load the best model
-    import xbgoost as xgb
+    import xgboost as xgb
     bst = xgb.Booster({'nthread': 4})  # init model
     bst.load_model(MODEL_PATH)  # load data
     y_pred = bst.predict(X_test)
