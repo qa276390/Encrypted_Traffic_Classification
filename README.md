@@ -3,6 +3,8 @@
 ## Dependency
 We use [joy 2.0](https://github.com/cisco/joy) tool to convert pcap file to json.
 
+Also, we use [GNU parallel version 3](https://www.gnu.org/software/parallel/) to speed up the data preprocessing.
+
 
 This project is dependent on Python 
 
@@ -13,6 +15,8 @@ This project is dependent on Python
 - scikit-learn == 0.19.1
 - xgboost == 0.80
 - argparse == 3.2
+
+
 
 ## Usage
 
