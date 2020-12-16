@@ -87,21 +87,22 @@ cd ./main && python3 train.py --mode DNN --source_data_folder ../data --output_f
 ## Visualization & Features
 
  To determine the features, we started from data visualization. In the FIG. 1 below, the different patterns of PSS are shown in the four pictures. In the two pictures of malicious flow, there are only one small packet sent out, while the received packets are larger than it. To go further into the pattern of PC malicious flow(dataset not provided) shown in the FIG. 1, there are a few received packets which are about 1500 bytes after the sent packet. This is the classical infection process of Trojan. After user send a request related to the Trojan, user's PC will receive lots of packets which are always about 1500 bytes. After analysis, we picked static feature PSS, Byte Distribution, TLS handshake and DNS information as our first feature set. We also used different Machine Learning technique to do classification which is my major role in our team. 
-
+<p align="center">
 <img  align="center" src="pics/fig2.png" height="300"/>
-
+</p>
+<p align="center"> FIG 1 </p>
 ## Results
 
 Using Tensorflow, we had tried a lot of structure to deal with it, such as DNN, CNN, RandomForest, Autoencoder, TSDNN…. To get better performance, we also tried to find more useful feature in other related work which need a lot of reading. In TABLE I, the accuracy could reach 99\% and also the macro F1-Score is over 98\%.
-
+<p align="center">
 <img  align="center" src="pics/table1.png" height="150"/>
-
-<p align="center"> Table 1 </p>
+</p>
+<p align="center"> TABLE 1 </p>
 
 ## Reference
 <a id="1">[1]</a> 
-Gerard Drapper Gil, Arash Habibi Lashkari, Mohammad Mamun, Ali A. Ghorbani (2016). 
+*Gerard Drapper Gil, Arash Habibi Lashkari, Mohammad Mamun, Ali A. Ghorbani (2016). 
 Characterization of Encrypted and VPN Traffic Using Time-Related Features 
-In Proceedings of the 2nd International Conference on Information Systems Security and Privacy(ICISSP 2016) , pages 407-414, Rome, Italy.
+In Proceedings of the 2nd International Conference on Information Systems Security and Privacy(ICISSP 2016) , pages 407-414, Rome, Italy.*
 
 
