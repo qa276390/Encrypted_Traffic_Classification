@@ -1,5 +1,5 @@
 # Encrypted_Traffic_Classification
- With the rapid rise in using encrypted traffic, there are now more than 40% of websites traffic are encrypted. The method used to detect malware in the past such as port-based and payload-based has no longer efficiency. Although we could not take a look in the encrypted packet, we may use some feature to analysis. There had been works in this field detecting VPN-nonVPN, Tor traffic, and most of works is doing malware detection. However, they all focused on single task with a clean dataset, so we decided to target our work on identifying a messy real-world traffic including VPN, Tor...etc.
+ With the rapid rise in using encrypted traffic, there are now more than 40% of websites traffic are encrypted. The method used to detect malware in the past such as port-based and payload-based has no longer efficiency. Although we could not take a look in the encrypted packet, we may use some feature to analysis. There had been works in this field detecting VPN-nonVPN, Tor traffic, and most of works is doing malware detection. However, they all focused on single task with a clean dataset, so we decided to target our work on identifying a **messy real-world traffic including VPN, Tor...etc**.
  
 - [Dependency](#dependency)
 - [Usage](#usage)
