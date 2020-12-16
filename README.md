@@ -91,6 +91,7 @@ cd ./main && python3 train.py --mode DNN --source_data_folder ../data --output_f
 <img  align="center" src="pics/fig2.png" height="300"/>
 </p>
 <p align="center"> FIG 1 </p>
+
 ## Results
 
 Using Tensorflow, we had tried a lot of structure to deal with it, such as DNN, CNN, RandomForest, Autoencoder, TSDNN…. To get better performance, we also tried to find more useful feature in other related work which need a lot of reading. In TABLE I, the accuracy could reach 99\% and also the macro F1-Score is over 98\%.
